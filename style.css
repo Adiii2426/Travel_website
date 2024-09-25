@@ -1,0 +1,571 @@
+
+/* ! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll
+html.has-scroll-smooth {
+    overflow: hidden; }
+  
+  html.has-scroll-dragging {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  
+  .has-scroll-smooth body {
+    overflow: hidden; }
+  
+  .has-scroll-smooth [data-scroll-container] {
+    min-height: 100vh; }
+  
+  .c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 100vh;
+    transform-origin: center right;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0; }
+    .c-scrollbar:hover {
+      transform: scaleX(1.45); }
+    .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+      opacity: 1; }
+  
+  .c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 7px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: -webkit-grab;
+    cursor: grab; }
+    .has-scroll-dragging .c-scrollbar_thumb {
+      cursor: -webkit-grabbing;
+      cursor: grabbing; }
+ */
+
+
+
+
+
+/*navbar start*/
+#navbar{background: black;
+    background-color: black;
+
+
+}
+
+#logo{
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0px 2px 2px darkgray;
+    margin-bottom: 5px;
+}
+#logo span{
+    color:aqua;
+}
+.navbar-toggler span{
+    color: aqua;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 1s ease;
+   
+
+    
+}
+.nav-item .nav-link:hover{
+    background-color: aqua;
+    box-shadow: 0px 0px 20px aqua;
+    color: black;
+}
+.d-flex button{
+    background-color: rgb(215, 239, 255);
+    color:black;
+    border: none;
+}
+.d-flex button:hover{
+    background-color: aqua;
+    box-shadow: 0px 0px 20px aqua;
+    color: black;
+}
+
+/*navbar end*/
+
+
+
+/*home section is start*/
+.home{
+
+    width: 100%;
+    height: 98vh;
+    background-image: url(https://images.pexels.com/photos/421927/pexels-photo-421927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    }
+
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: rgb(37, 149, 193);
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color:rgb(5, 52, 70);
+    text-shadow: 0px 1px 1px black;
+    animation: changetxt 10s infinite linear;
+    padding-left: 20px;
+}
+@keyframes changetxt{
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Pakistan";}
+    60%{content: "Italy";}
+    70%{content: "Turkey";}
+    80%{content: "Mexico";}
+    90%{content: "Germany";}
+    100%{content: "United kingdom";}
+}
+.home .content p{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+.home .content a{
+    padding: 5px;
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: cursive;
+    height: 50px;
+
+
+}
+.home .content a:hover{
+    font-family: sans-serif;
+    font-size: 17px;
+    
+    background-color: aqua;
+    box-shadow: 0px 0px 20px aqua;
+    border-radius: 7px;
+    width: 80px;
+    height: 60px;
+
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+
+    }
+    .home .content h1{
+        font-size: 38px;
+
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/*home section is end*/
+
+
+/*section book is start*/
+.book{background: white;
+    padding: 50px;
+    margin-top: 250px;
+
+
+}
+.main-text h1{
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    text-shadow: 0px 0px 10px black;
+}
+.main-text h1 span{
+    color: aqua;
+    font-size: 50px;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    border: 1px solid black;
+   
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding:15px;
+    color: black;
+    margin-top: 15px;
+    box-shadow: 0px 5px 5px -6px black;
+    padding-top: 15px;
+    height: 70px;
+    border: 1px solid black;
+    transition: 1s ease;
+
+}
+.book form input:hover{
+    background-color: rgb(215, 239, 255);
+    color: black;
+    border: 1px solid black;
+    background-image: linear-gradient(aqua,rgb(38, 92, 92));
+    height: 80px;
+    width: 700px;
+}
+.book form textarea{
+    border: 1px solid black;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+    margin-top: 10px;
+    transition: 1s ease;
+    
+    
+}
+.book form textarea:hover{
+    background-image: url(https://i.pinimg.com/564x/e5/15/5f/e5155fde000d8088b153efb626fa71ce.jpg);
+    border: 1px solid black;
+
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: black;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+    
+    border-radius: 10px;
+}
+.book .submit:hover{
+    width: 170px;
+    border-radius: 10px;
+    background-image: linear-gradient(aqua,rgb(45, 107, 107),rgb(26, 60, 60));
+    box-shadow: 5px 5px 10px black;
+    color: white;
+    
+
+
+    
+}
+@media(max-width:765px){
+    .book{padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+
+    }
+
+}
+/*section book is end*/
+
+
+/*section packages is start*/
+
+.main-text h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px black;
+}
+.main-text h1 span{
+    color: aqua;
+    font-size: 50px;
+}
+.packages .card
+{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,1) 0px 4px 12px;
+    margin: 15px;
+    background: black;
+    color: aqua;
+    
+}
+
+.packages .card img{
+    border-radius: 5px;
+}
+.packages.card .card-body{
+    background: black;
+
+
+}
+.packages .card .card-bodyh1{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+    color: white;
+}
+.checked{
+    color:gold;   
+}
+.star i{
+    font-size: 10px;
+    margin-bottom: 10px;
+
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: aqua;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px;
+    width: 10%;
+    text-align: center;
+}
+.packages .card .card-body a:hover{
+    box-shadow: 0px 0px 50px aqua;
+}
+/*section packages is end*/
+
+
+/*section services is start*/
+.services
+{
+    background: white;
+    margin-top: 50px;
+    
+}
+.services .card
+{
+   
+    border: none;
+    background: black;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 20px -10px black;
+    transition: 1s ease;
+}
+.services .card:hover{
+   border-radius: 30%;
+   box-shadow: 10px 10px 20px -10px aqua;
+
+}
+.services .card i
+{
+    font-size: 80px;
+    text-align: center;
+    color: aqua;
+    margin-top: 20px;
+    margin: 20px;
+
+}
+.services .card .card-body h3
+{
+    font-weight: 600;
+    color: white;
+}
+.services .card .card-body 
+{
+    text-align: center;
+
+}
+.services .card .card-body p{
+    color: white;
+}
+.services .main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px black;
+}
+.services .main-txt h1 span{
+    color: aqua;
+    font-size: 50px;
+}
+
+/*section services is end*/
+
+/*section gallery is start*/
+.gallery{
+    margin-top: 50px;
+}
+.gallery .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,1) 0px 4px 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.gallery .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+.gallery .card img:hover{
+    transform: scale(1.1);
+}
+.gallery .main-txt h1{
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 600;
+        text-shadow: 0px 0px 10px black;
+    }
+.gallery .main-txt h1 span{
+        color: aqua;
+        font-size: 50px;
+}
+
+
+
+/*section gallery is  end*/
+
+
+
+/*section about is start*/
+.about{
+    padding: 50px;
+ /* margin-top: 50px; */
+    background: white;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: skyblue;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+#about-btn:hover{
+    width: 170px;
+}
+.about .main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px black;
+}
+.about .main-txt h1 span{
+    color: aqua;
+    font-size: 50px;
+
+}
+@media(max-width:765px){
+    .about{
+        padding:0;
+    }
+}
+
+
+/*secction about is end*/
+
+
+
+/* footer start */ 
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: white;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+
+}
+#footer h1 span{
+    color: skyblue;
+}
+.social-links{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 28px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: skyblue;
+}
+
+
+/* footer end */
+
+
+a button{
+    height: 30px;
+    width: 80px;
+    border-radius: 4px;
+   float: right;
+   color: black;
+   text-decoration: none;
+    border: none;
+    color: white;
+    background: aqua;
+    box-shadow: 3px 3px 7px black;
+
+}
